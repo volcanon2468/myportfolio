@@ -13,23 +13,9 @@
             scroll-behavior: smooth;
             scroll-padding-top: 75px;
         }
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': '#3b3b3b',
-                        'secondary': '#a47148',
-                        'background': '#fdfbf7',
-                        'surface': '#f7efe3',
-                        'text-main': '#3b3b3b',
-                        'text-light': '#5e5e5e',
-                    }
-                }
-            }
-        }
     </style>
 </head>
-<body class="bg-background text-text-main font-sans">
+<body class="bg-[#fdfbf7] text-[#3b3b3b] font-sans">
 
     <header class="bg-[#3b3b3b] shadow-md sticky top-0 z-50">
         <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -58,65 +44,141 @@
         </div>
     </header>
 
-    <section id="home" class="text-center py-20 bg-surface" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-primary">Hi, I'm Divyaroop Sagar Kovi</h2>
-        <p class="text-text-light mt-3 text-lg md:text-xl italic">
-            <span id="typed" class="text-secondary font-semibold"></span>
+    <section id="home" class="text-center py-20 bg-[#f7efe3]" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-[#3b3b3b]">Hi, I'm Divyaroop Sagar Kovi</h2>
+        <p class="text-[#5e5e5e] mt-3 text-lg md:text-xl italic">
+            <span id="typed" class="text-[#a47148] font-semibold"></span>
         </p>
         <div class="mt-8 space-x-4">
-             <a href="https://www.linkedin.com/in/divyaroop-sagar-k" target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-opacity-80 transition">
+            <a href="https://www.linkedin.com/in/divyaroop-sagar-k" target="_blank"
+               class="inline-block bg-[#3b3b3b] text-white px-6 py-3 rounded-md hover:bg-opacity-80 transition">
                 <i class="fab fa-linkedin mr-2"></i>LinkedIn
             </a>
-            <a href="#" download class="inline-block bg-secondary text-white px-6 py-3 rounded-md hover:bg-opacity-80 transition">
+            <a href="https://github.com/volcanon2468" target="_blank"
+               class="inline-block bg-[#3b3b3b] text-white px-6 py-3 rounded-md hover:bg-opacity-80 transition">
+                <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+            <a href="#" download
+               class="inline-block bg-[#a47148] text-white px-6 py-3 rounded-md hover:bg-opacity-80 transition">
                 <i class="fas fa-download mr-2"></i>Download Resume
             </a>
         </div>
     </section>
 
     <section id="about" class="max-w-5xl mx-auto py-20 px-4" data-aos="fade-up">
-        <h3 class="text-3xl font-bold mb-8 text-center text-primary">About Me</h3>
-        <p class="text-text-light mb-12 leading-relaxed text-lg text-center">
-            A driven and diligent computer engineer with a solid foundation in software development, algorithms, and machine learning. Competent in Python, C, and Java. Versatile and goal-focused, excelling in both independent and collaborative environments. Committed to continuous learning, problem-solving, and delivering high-impact technical solutions. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.
+        <h3 class="text-3xl font-bold mb-8 text-center text-[#3b3b3b]">About Me</h3>
+        <p class="text-[#5e5e5e] mb-12 leading-relaxed text-lg text-center">
+            Computer Science student (CGPA: 9.02) with practical experience in Full Stack development and Machine Learning,
+            with emphasis on object-oriented design and data structures. Designed and implemented production-level software —
+            from ML models with 0.93 ROC AUC to a full-stack decentralized messaging application — in both individual and team
+            settings, employing Agile development methodologies.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-                <h4 class="text-2xl font-semibold mb-4 text-primary">Skills</h4>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">C/C++</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">Python</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">Java</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">HTML/CSS/JS</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">Data Structures</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">Problem Solving</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">Analytical Thinking</span>
-                    <span class="bg-surface px-4 py-2 rounded-lg text-center text-text-main font-medium">Project Management</span>
+                <h4 class="text-2xl font-semibold mb-4 text-[#3b3b3b]">Skills</h4>
+
+                <p class="text-sm font-semibold text-[#a47148] uppercase mb-2">Languages</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Python</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Java</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">C / C++</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">MySQL</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">JavaScript</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">HTML / CSS</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Shell Scripting</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Assembly (8051, 8086)</span>
+                </div>
+
+                <p class="text-sm font-semibold text-[#a47148] uppercase mb-2">Frameworks & Tools</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">React</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Next.js</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Node.js</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Vite</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Streamlit</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Git / GitHub</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Firebase</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Linux</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Pinata API</span>
+                </div>
+
+                <p class="text-sm font-semibold text-[#a47148] uppercase mb-2">AI & ML</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">PyTorch</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">TensorFlow</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Scikit-learn</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">YOLOv8</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">spaCy</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Pandas / NumPy</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Matplotlib</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">OCR</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">NLP</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">MLOps</span>
+                </div>
+
+                <p class="text-sm font-semibold text-[#a47148] uppercase mb-2">Core Competencies</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Data Structures & Algorithms</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">OOP</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Agile / SDLC</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">AWS Cloud Computing</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Cryptography & Network Security</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">PostgreSQL</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">MongoDB</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">ElasticSearch</span>
                 </div>
             </div>
+
             <div>
-                <h4 class="text-2xl font-semibold mb-4 text-primary">Education</h4>
+                <h4 class="text-2xl font-semibold mb-4 text-[#3b3b3b]">Education</h4>
                 <ul class="space-y-3">
-                    <li class="bg-surface p-4 rounded-lg text-text-light"><b>B.Tech, CSE</b> - VIT Chennai (2023–Present)</li>
-                    <li class="bg-surface p-4 rounded-lg text-text-light"><b>Class XII</b> - Narayana Junior College (2021–2023)</li>
-                    <li class="bg-surface p-4 rounded-lg text-text-light"><b>Class X</b> - Bharatiya Vidya Bhavan's SVV (2011–2021)</li>
+                    <li class="bg-[#f7efe3] p-4 rounded-lg text-[#5e5e5e]">
+                        <b>B.Tech, CSE</b> — VIT Chennai
+                        <br><span class="text-sm">2023 – Present &nbsp;|&nbsp; CGPA: 9.02 / 10</span>
+                    </li>
+                    <li class="bg-[#f7efe3] p-4 rounded-lg text-[#5e5e5e]">
+                        <b>Class XII</b> — Narayana Junior College
+                        <br><span class="text-sm">2021 – 2023 &nbsp;|&nbsp; 94.9%</span>
+                    </li>
+                    <li class="bg-[#f7efe3] p-4 rounded-lg text-[#5e5e5e]">
+                        <b>Class X</b> — Bharatiya Vidya Bhavan's SVV
+                        <br><span class="text-sm">2011 – 2021 &nbsp;|&nbsp; 96.4%</span>
+                    </li>
                 </ul>
+
+                <h4 class="text-2xl font-semibold mt-8 mb-4 text-[#3b3b3b]">Relevant Coursework</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Data Structures & Algorithms</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Operating Systems</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Computer Networks</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Cloud Computing</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">AWS Cloud Architecture</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Blockchain Foundations</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">DBMS</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Cryptography & Network Security</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Software Engineering</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Predictive Analytics</span>
+                    <span class="bg-[#f7efe3] px-3 py-1 rounded-lg text-sm font-medium">Microprocessors & Microcontrollers</span>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="experience" class="bg-surface py-20 px-4" data-aos="fade-up">
+
+    <section id="experience" class="bg-[#f7efe3] py-20 px-4" data-aos="fade-up">
         <div class="max-w-5xl mx-auto">
-            <h3 class="text-3xl font-bold mb-10 text-center text-primary">Experience</h3>
-            <div class="bg-background p-6 rounded-lg shadow-md border-l-4 border-secondary">
+            <h3 class="text-3xl font-bold mb-10 text-center text-[#3b3b3b]">Experience</h3>
+            <div class="bg-[#fdfbf7] p-6 rounded-lg shadow-md border-l-4 border-[#a47148]">
                 <div class="flex justify-between items-center mb-1">
-                    <h4 class="text-xl font-semibold text-primary">ML Intern</h4>
-                    <span class="text-sm font-medium text-text-light">May 2025 - Jun 2025</span>
+                    <h4 class="text-xl font-semibold text-[#3b3b3b]">Machine Learning Intern</h4>
+                    <span class="text-sm font-medium text-[#5e5e5e]">May 2025 – Jun 2025</span>
                 </div>
-                <p class="text-lg font-medium text-text-light mb-3">Exafluence</p>
-                <ul class="list-disc list-inside text-text-light space-y-2">
-                    <li>Developed and evaluated ML models (Random Forest, XGBoost, etc.) to predict customer term deposit subscriptions.</li>
-                    <li>Applied pre-processing, handled class imbalance with SMOTE, and optimized models using GridSearchCV.</li>
-                    <li>Achieved a 0.93 ROC AUC score with Gradient Boosting, providing key marketing insights.</li>
+                <p class="text-lg font-medium text-[#a47148] mb-3">Exafluence</p>
+                <ul class="list-disc list-inside text-[#5e5e5e] space-y-2">
+                    <li>Designed a predictive modeling pipeline with Python (Random Forest, XGBoost) to predict customer behavior patterns for financial clients.</li>
+                    <li>Improved data preprocessing by implementing SMOTE to handle class imbalance, ensuring model validity and minimizing false negatives.</li>
+                    <li>Enhanced hyperparameter tuning with GridSearchCV, achieving a <strong>0.93 ROC AUC</strong> score with Gradient Boosting.</li>
+                    <li>Collaborated with senior developers to integrate the model into existing software infrastructure, ensuring compliance with system boundary conditions.</li>
                 </ul>
             </div>
         </div>
@@ -124,50 +186,107 @@
 
     <section id="projects" class="py-20 px-4" data-aos="fade-up">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-3xl font-bold mb-10 text-center text-primary">Projects</h3>
+            <h3 class="text-3xl font-bold mb-10 text-center text-[#3b3b3b]">Projects</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300">
-                    <h4 class="text-xl font-semibold mb-2 text-primary">Biased Random Walk Search Algorithm</h4>
-                    <p class="text-text-light mb-4">Developed and visualized an efficient biased random walk algorithm for resource search in unstructured P2P networks, showing improved performance over standard methods.</p>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-[#3b3b3b]">Biased Random Walk for P2P Search</h4>
+                        <span class="text-xs text-[#a47148] font-medium ml-2 whitespace-nowrap">2023–2024</span>
+                    </div>
+                    <p class="text-[#5e5e5e] mb-4">
+                        Developed a biased random walk algorithm in Python for unstructured P2P networks using softmax-based node selection
+                        (degree, resource likelihood, capacity), achieving a <strong>50% reduction in average hops</strong> (3.0 → 1.5)
+                        through adaptive learning. Built a NetworkX simulation framework to benchmark against flooding and random walk baselines.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">Python</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">NetworkX</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">P2P Networks</span>
+                    </div>
                 </div>
+
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300">
-                    <h4 class="text-xl font-semibold mb-2 text-primary">IPFS-based Messaging DApp</h4>
-                    <p class="text-text-light mb-4">A secure, decentralized messaging application using blockchain for end-to-end encrypted communication, featuring group chats and contact management. (In Progress)</p>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-[#3b3b3b]">Advanced Image Recognition & Information Extraction</h4>
+                        <span class="text-xs text-[#a47148] font-medium ml-2 whitespace-nowrap">2025</span>
+                    </div>
+                    <p class="text-[#5e5e5e] mb-4">
+                        Designed a multi-modal AI solution utilizing dual-engine OCR, spaCy NLP, YOLOv8, and enhanced preprocessing for
+                        accurate automatic document understanding across varied lighting, orientations, and quality conditions.
+                        Built a Streamlit frontend with adaptive processing modes, real-time feedback, and engine fallback based on accuracy.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">YOLOv8</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">spaCy</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">OCR</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">Streamlit</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">Computer Vision</span>
+                    </div>
                 </div>
+
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300">
-                    <h4 class="text-xl font-semibold mb-2 text-primary">IPFS-based Messaging DApp</h4>
-                    <p class="text-text-light mb-4">Designed and developed a multi-modal AI solution that utilized dual-engine OCR, spaCy’s NLP library, enhanced pre-processing, YOLOv8 for carrying out accurate automatic document understanding under different lighting conditions, orientations, and qualities of the documents. Created adaptive processing modes along with Streamlit frontend to provide real-time feedback, annotated results, and fast 2-8 produces the second set of search engine results pages for various real-world document queries.</p>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-[#3b3b3b]">IPFS-based Decentralized Messaging App</h4>
+                        <span class="text-xs text-[#a47148] font-medium ml-2 whitespace-nowrap">2024</span>
+                    </div>
+                    <p class="text-[#5e5e5e] mb-4">
+                        Built a full-stack decentralized messaging app with immutable message storage via IPFS, a React + TypeScript frontend,
+                        and secure authentication via Supabase (PostgreSQL). Implemented local caching for offline messaging and async blockchain
+                        operations ensuring <strong>message delivery under 3 seconds</strong>. Followed full SDLC with a team of 3 using Agile and Git.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">React</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">TypeScript</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">IPFS</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">Supabase</span>
+                        <span class="bg-[#f7efe3] px-2 py-1 rounded text-xs font-medium">Blockchain</span>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact" class="bg-surface py-20 px-4" data-aos="fade-up">
+    <section id="contact" class="bg-[#f7efe3] py-20 px-4" data-aos="fade-up">
         <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-3xl font-bold mb-4 text-primary">Get In Touch</h3>
-            <p class="text-text-light mb-8 text-lg">I'm currently looking for new opportunities. Feel free to reach out!</p>
-            <a href="mailto:divyaroop.kovi@gmail.com" class="inline-block bg-secondary text-white text-lg px-8 py-3 rounded-md hover:bg-opacity-80 transition">Say Hello</a>
-            <div class="mt-10 text-center text-text-light space-x-6">
-                <a href="https://www.linkedin.com/in/divyaroop-sagar-k" target="_blank" class="text-primary hover:text-secondary text-2xl" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/volcanon2468" class="text-primary hover:text-secondary text-2xl" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:divyaroop.kovi@gmail.com" class="text-primary hover:text-secondary text-2xl" title="Email"><i class="fas fa-envelope"></i></a>
+            <h3 class="text-3xl font-bold mb-4 text-[#3b3b3b]">Get In Touch</h3>
+            <p class="text-[#5e5e5e] mb-8 text-lg">I'm currently looking for new opportunities. Feel free to reach out!</p>
+            <a href="mailto:divyaroop.kovi@gmail.com"
+               class="inline-block bg-[#a47148] text-white text-lg px-8 py-3 rounded-md hover:bg-opacity-80 transition">
+                Say Hello
+            </a>
+            <div class="mt-10 text-center text-[#5e5e5e] space-x-6">
+                <a href="https://www.linkedin.com/in/divyaroop-sagar-k" target="_blank"
+                   class="text-[#3b3b3b] hover:text-[#a47148] text-2xl" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/volcanon2468" target="_blank"
+                   class="text-[#3b3b3b] hover:text-[#a47148] text-2xl" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:divyaroop.kovi@gmail.com"
+                   class="text-[#3b3b3b] hover:text-[#a47148] text-2xl" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-background py-6 text-center text-sm text-text-light">
+    <footer class="bg-[#fdfbf7] py-6 text-center text-sm text-[#5e5e5e]">
         &copy; 2025 Divyaroop Sagar Kovi. All rights reserved.
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
+        AOS.init({ duration: 1000, once: true });
 
         var typed = new Typed("#typed", {
-            strings: ["A Computer Science Student", "An ML Enthusiast", "A Passionate Developer"],
+            strings: [
+                "A Computer Science Student @ VIT Chennai",
+                "A Machine Learning Enthusiast",
+                "A Full Stack Developer",
+                "A Passionate Problem Solver"
+            ],
             typeSpeed: 50,
             backSpeed: 30,
             backDelay: 2000,
@@ -190,4 +309,3 @@
     </script>
 </body>
 </html>
-
