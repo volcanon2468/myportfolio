@@ -606,18 +606,20 @@ footer {
 
     <div class="exp-card" data-anim>
       <div class="exp-meta">
-        <div class="exp-company">Amararaja Batteries Limited</div>
+        <div class="exp-company">Amara Raja Energy & Mobility Limited</div>
         <div class="exp-period">May 2026 – Jul 2026</div>
       </div>
       <div>
         <div class="exp-role">Software Engineering Intern</div>
         <ul class="exp-bullets">
-          <li>Engineered an energy settlement platform using Next.js 14 and a Python/FastAPI backend, with bulk file upload support through an edge-secured UI.</li>
+          <li>Analyzed time-series generator, consumer, and IEX market data to identify anomalies and power factor irregularities.</li>
+          <li>Engineered an energy settlement platform (Next.js, TypeScript, FastAPI) with bulk raw XML/Excel meter file uploads via streaming parsers.</li>
           <li>Developed a Pandas calculation engine for ledger calculations, processing 30-day time-series blocks in 0.26 seconds.</li>
           <li>Connected SQLAlchemy 2.0 asynchronously to Microsoft SQL Server with idempotent inserts and cascading deletes.</li>
         </ul>
         <div class="exp-tag-row">
-          <span class="exp-tag">Next.js 14</span>
+          <span class="exp-tag">Next.js</span>
+          <span class="exp-tag">TypeScript</span>
           <span class="exp-tag">FastAPI</span>
           <span class="exp-tag">Pandas</span>
           <span class="exp-tag">SQLAlchemy 2.0</span>
@@ -629,24 +631,22 @@ footer {
 
     <div class="exp-card" data-anim>
       <div class="exp-meta">
-        <div class="exp-company">Exafluence</div>
+        <div class="exp-company">Exafluence Global Analytics Pvt Ltd</div>
         <div class="exp-period">May 2025 – Jun 2025</div>
       </div>
       <div>
         <div class="exp-role">Machine Learning Intern</div>
         <ul class="exp-bullets">
-          <li>Architected a customer behavior forecasting pipeline using Random Forest and XGBoost to predict customer behavior patterns for financial clients.</li>
-          <li>Improved data preprocessing tasks by designing an SMOTE algorithm to address class imbalance issues, ensuring model validity and minimizing false negatives.</li>
-          <li>Enhanced hyperparameter search techniques with GridSearchCV, maximizing model accuracy (ROC AUC) at <strong>0.93</strong> while ensuring computational efficiency.</li>
-          <li>Collaborated with senior developers to integrate the model with existing software infrastructure, ensuring data prototypes satisfied system boundary conditions and security requirements.</li>
+          <li>Analyzed customer transaction-behavioral data to engineer and evaluate a forecasting pipeline, with Random Forest, GBC, and XGBoost models.</li>
+          <li>Applied SMOTE to address class imbalance and reduce false negatives, tuned hyperparameters via GridSearchCV, and achieved a ROC AUC of <strong>0.93</strong>.</li>
         </ul>
         <div class="exp-tag-row">
           <span class="exp-tag">Python</span>
           <span class="exp-tag">Random Forest</span>
+          <span class="exp-tag">GBC</span>
           <span class="exp-tag">XGBoost</span>
           <span class="exp-tag">SMOTE</span>
           <span class="exp-tag">GridSearchCV</span>
-          <span class="exp-tag">MLOps</span>
         </div>
       </div>
     </div>
@@ -665,69 +665,67 @@ footer {
 
       <div class="project-card" data-anim>
         <div class="project-num">// P.01</div>
-        <div class="project-title">HUA-DTIP: ADAPTIVE DIGITAL TWIN FOR HEALTH</div>
+        <div class="project-title">WATCHTOWER AGENT: MULTI-TOOL AGENTIC RAG SYSTEM</div>
         <div class="project-desc">
-          Holistic User Activity Digital Twin with Intervention Planning — a complete ML pipeline for processing multi-modal sensor data (IMU, ECG, PPG) to deliver personalized health recommendations, achieving all 8 target evaluation metrics. Hierarchical temporal model built on TCN-Transformers and PatchTST, encoding patient history into a probabilistic state via beta-VAE. A Soft Actor-Critic (SAC) RL agent with Federated Learning improves privacy while cutting cold-start failures.
+          An agentic RAG system that autonomously routes questions across five live tools — hybrid semantic/keyword document search, stock data (US/NSE/BSE), weather, Wikipedia, and web search — using confidence-scored retrieval with automatic fallback to keep answers grounded. Supports both hosted LLMs and fully offline inference via Ollama, with persistent multi-turn memory, a token-streaming API, and an auto-refreshing knowledge index that rebuilds when source documents change.
         </div>
-        <div class="project-highlight">94.6% uncertainty calibration &nbsp;·&nbsp; 55.3% personalization gain</div>
+        <div class="project-highlight">5-tool confidence-scored routing &nbsp;·&nbsp; offline + hosted LLM inference</div>
         <div class="project-tech">
           <span class="tech-pill">Python</span>
-          <span class="tech-pill">TCN-Transformers</span>
-          <span class="tech-pill">PatchTST</span>
-          <span class="tech-pill">beta-VAE</span>
-          <span class="tech-pill">SAC RL</span>
-          <span class="tech-pill">Federated Learning</span>
+          <span class="tech-pill">RAG</span>
+          <span class="tech-pill">LangChain</span>
+          <span class="tech-pill">LangGraph</span>
+          <span class="tech-pill">Ollama</span>
+          <span class="tech-pill">FastAPI</span>
         </div>
       </div>
 
       <div class="project-card" data-anim>
         <div class="project-num">// P.02</div>
-        <div class="project-title">BIASED RANDOM WALK P2P SEARCH</div>
+        <div class="project-title">HOLISTIC USER ACTIVITY DIGITAL TWIN</div>
         <div class="project-desc">
-          A self-optimizing search algorithm for unstructured peer-to-peer networks using softmax-weighted node selection — factoring degree, resource likelihood, and capacity for adaptive routing. A NetworkX simulation shows the algorithm outperforming flooding on message cost and total node visits, with query caching and adaptive weight updates for self-tuning based on observed traffic patterns.
+          An end-to-end ML pipeline over multi-modal sensor data (IMU, ECG, PPG) for activity recognition and heart-rate estimation, built after deep analysis of raw sensor signals for noise, missingness, and quality. A hierarchical temporal model using TCN-Transformers encodes patient history into a probabilistic 10-D health state via a beta-VAE, and a Latent Neural SDE continuously forecasts future health-state trajectories from that latent space.
         </div>
-        <div class="project-highlight">50% reduction in average hops (3.0 → 1.5)</div>
+        <div class="project-highlight">91% uncertainty calibration &nbsp;·&nbsp; 98.3% activity recognition on PAMAP2 &nbsp;·&nbsp; 0.89 Pearson correlation</div>
         <div class="project-tech">
           <span class="tech-pill">Python</span>
-          <span class="tech-pill">NetworkX</span>
-          <span class="tech-pill">Softmax</span>
-          <span class="tech-pill">Adaptive Learning</span>
-          <span class="tech-pill">P2P Networks</span>
+          <span class="tech-pill">TCN-Transformers</span>
+          <span class="tech-pill">beta-VAE</span>
+          <span class="tech-pill">Latent Neural SDE</span>
+          <span class="tech-pill">PyTorch</span>
         </div>
       </div>
 
       <div class="project-card" data-anim>
         <div class="project-num">// P.03</div>
-        <div class="project-title">OMNIDOCPARSE: DOCUMENT EXTRACTION SYSTEM</div>
+        <div class="project-title">REFLEXIONAGENT: VERBAL REINFORCEMENT LEARNING</div>
         <div class="project-desc">
-          A FastAPI document extraction system using PyTorch, YOLOv8, spaCy, and dual-engine OCR (Tesseract/EasyOCR) with confidence-based fallback to improve accuracy across diverse document layouts, orientations, and lighting conditions. Includes a Streamlit validation interface, thread-safe model loading, configurable pipelines, and containerized deployment with Docker and NGINX.
+          An implementation of the Reflexion framework (NeurIPS 2023) — a self-reflecting language agent that generates verbal feedback on failures, stores reflection memory, and retries tasks, enabling iterative improvement without model fine-tuning. Architected as a modular Actor-Evaluator-Self-Reflection pipeline with configurable trial budgets, error categorization, success-criteria gating, and per-trial performance tracking across sequential reasoning and code generation tasks.
         </div>
-        <div class="project-highlight">Adaptive fallback engine — real-time confidence routing</div>
+        <div class="project-highlight">Iterative self-improvement — zero fine-tuning required</div>
         <div class="project-tech">
-          <span class="tech-pill">FastAPI</span>
-          <span class="tech-pill">YOLOv8</span>
-          <span class="tech-pill">spaCy</span>
-          <span class="tech-pill">Tesseract/EasyOCR</span>
-          <span class="tech-pill">Streamlit</span>
-          <span class="tech-pill">Docker</span>
-          <span class="tech-pill">NGINX</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">LLM Agents</span>
+          <span class="tech-pill">Reflexion</span>
+          <span class="tech-pill">Actor-Evaluator</span>
         </div>
       </div>
 
       <div class="project-card" data-anim>
         <div class="project-num">// P.04</div>
-        <div class="project-title">IPFS DECENTRALIZED MESSAGING APP</div>
+        <div class="project-title">OMNIDOC PARSE: DOCUMENT EXTRACTION SYSTEM</div>
         <div class="project-desc">
-          Full-stack decentralized messaging application with immutable IPFS storage, type-safe React/TypeScript frontend, and a caching system for offline support. Secure authentication via Supabase PostgreSQL with sub-3-second message delivery.
+          A FastAPI document extraction system using PyTorch, YOLOv8, spaCy, and dual-engine OCR with confidence-based fallback, improving extraction accuracy across varied layouts, orientations, and image quality. Includes a Streamlit validation interface, thread-safe model loading, configurable processing pipelines, and containerized deployment with Docker and NGINX for scalable, production-ready execution.
         </div>
-        <div class="project-highlight">Full SDLC — team of 3, agile methodology</div>
+        <div class="project-highlight">Adaptive fallback engine — real-time confidence routing</div>
         <div class="project-tech">
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">IPFS</span>
-          <span class="tech-pill">Supabase</span>
-          <span class="tech-pill">PostgreSQL</span>
-          <span class="tech-pill">Blockchain</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">PyTorch</span>
+          <span class="tech-pill">YOLOv8</span>
+          <span class="tech-pill">spaCy</span>
+          <span class="tech-pill">Streamlit</span>
+          <span class="tech-pill">Docker</span>
+          <span class="tech-pill">NGINX</span>
         </div>
       </div>
 
@@ -751,23 +749,8 @@ footer {
         <ul class="skill-list">
           <li>Python <span class="skill-dot"></span></li>
           <li>Java <span class="skill-dot"></span></li>
-          <li>JavaScript / TypeScript <span class="skill-dot"></span></li>
-          <li>C / C++ <span class="skill-dot"></span></li>
+          <li>C++ <span class="skill-dot"></span></li>
           <li>SQL <span class="skill-dot"></span></li>
-          <li>Shell Scripting <span class="skill-dot"></span></li>
-        </ul>
-      </div>
-
-      <div class="skill-block" data-anim>
-        <div class="skill-block-icon">⚙</div>
-        <div class="skill-block-title">Frameworks & Tools</div>
-        <ul class="skill-list">
-          <li>React / Next.js / Vite <span class="skill-dot"></span></li>
-          <li>Node.js / FastAPI / REST API <span class="skill-dot"></span></li>
-          <li>Linux / Git / GitHub <span class="skill-dot"></span></li>
-          <li>Firebase / Supabase <span class="skill-dot"></span></li>
-          <li>AWS Cloud / Docker / Kubernetes <span class="skill-dot"></span></li>
-          <li>Streamlit / Pinata API <span class="skill-dot"></span></li>
         </ul>
       </div>
 
@@ -775,26 +758,45 @@ footer {
         <div class="skill-block-icon">🧠</div>
         <div class="skill-block-title">AI & Machine Learning</div>
         <ul class="skill-list">
-          <li>PyTorch / TensorFlow <span class="skill-dot"></span></li>
-          <li>Scikit-learn / XGBoost <span class="skill-dot"></span></li>
-          <li>YOLOv8 / spaCy / OpenCV <span class="skill-dot"></span></li>
-          <li>Tesseract / Ollama <span class="skill-dot"></span></li>
-          <li>Computer Vision / NLP / RAG <span class="skill-dot"></span></li>
-          <li>MLOps / Predictive Analytics <span class="skill-dot"></span></li>
+          <li>PyTorch <span class="skill-dot"></span></li>
+          <li>Scikit-learn <span class="skill-dot"></span></li>
           <li>Pandas / NumPy / Matplotlib <span class="skill-dot"></span></li>
+          <li>XGBoost <span class="skill-dot"></span></li>
+          <li>YOLOv8 <span class="skill-dot"></span></li>
+          <li>Tesseract <span class="skill-dot"></span></li>
         </ul>
       </div>
 
       <div class="skill-block" data-anim>
-        <div class="skill-block-icon">◈</div>
-        <div class="skill-block-title">Core Competencies</div>
+        <div class="skill-block-icon">🤖</div>
+        <div class="skill-block-title">LLM & Agentic AI</div>
         <ul class="skill-list">
-          <li>Data Structures & Algorithms <span class="skill-dot"></span></li>
-          <li>Software Development (Agile / SDLC) <span class="skill-dot"></span></li>
-          <li>Object-Oriented Programming <span class="skill-dot"></span></li>
-          <li>Cryptography & Network Security <span class="skill-dot"></span></li>
-          <li>PostgreSQL / MongoDB / MySQL / MS SQL Server <span class="skill-dot"></span></li>
-          <li>Cloud Computing / Blockchain <span class="skill-dot"></span></li>
+          <li>LangChain <span class="skill-dot"></span></li>
+          <li>LangGraph <span class="skill-dot"></span></li>
+          <li>RAG <span class="skill-dot"></span></li>
+          <li>Ollama <span class="skill-dot"></span></li>
+        </ul>
+      </div>
+
+      <div class="skill-block" data-anim>
+        <div class="skill-block-icon">⚙</div>
+        <div class="skill-block-title">Frameworks & Databases</div>
+        <ul class="skill-list">
+          <li>FastAPI <span class="skill-dot"></span></li>
+          <li>Streamlit <span class="skill-dot"></span></li>
+          <li>Microsoft SQL Server <span class="skill-dot"></span></li>
+          <li>MongoDB <span class="skill-dot"></span></li>
+        </ul>
+      </div>
+
+      <div class="skill-block" data-anim>
+        <div class="skill-block-icon">☁</div>
+        <div class="skill-block-title">Cloud & DevOps</div>
+        <ul class="skill-list">
+          <li>Firebase <span class="skill-dot"></span></li>
+          <li>AWS <span class="skill-dot"></span></li>
+          <li>Git <span class="skill-dot"></span></li>
+          <li>Docker <span class="skill-dot"></span></li>
         </ul>
       </div>
 
@@ -865,7 +867,7 @@ footer {
   <div class="contact-links">
     <a href="mailto:divyaroop.kovi@gmail.com" class="contact-link">
       <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      divyaroop.kovi@gmail.com
+      [divyaroop.kovi@gmail.com](mailto:divyaroop.kovi@gmail.com)
     </a>
     <a href="https://github.com/volcanon2468" target="_blank" rel="noopener" class="contact-link">
       <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
