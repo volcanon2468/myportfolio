@@ -197,7 +197,8 @@ section { position:relative;z-index:1; }
 }
 
 .stats-row {
-  display:grid;grid-template-columns:repeat(4,1fr);
+  display:inline-grid;grid-template-columns:minmax(160px,220px);
+  width:max-content;
   gap:1px;background:var(--border);
   border:1px solid var(--border);
   margin-top:2rem;
@@ -273,7 +274,7 @@ section { position:relative;z-index:1; }
 .exp-tag:hover { color:var(--cyan);border-color:rgba(0,229,255,.3); }
 
 .projects-grid {
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  display:grid;grid-template-columns:repeat(2,1fr);
   gap:1.5px;background:var(--border);
 }
 .project-card {
@@ -502,7 +503,8 @@ footer {
   .hero-right { display:none; }
   .section-wrap { padding:4rem 2rem; }
   .exp-card { grid-template-columns:1fr;gap:1rem; }
-  .stats-row { grid-template-columns:repeat(2,1fr); }
+  .stats-row { grid-template-columns:minmax(160px,220px); }
+  .projects-grid { grid-template-columns:1fr; }
   footer { flex-direction:column;gap:1rem; }
   nav { padding:1rem 1.5rem; }
   #contact { padding:4rem 2rem; }
@@ -549,18 +551,6 @@ footer {
         <div class="stat-num">9.03</div>
         <div class="stat-label">CGPA / 10</div>
       </div>
-      <div class="stat">
-        <div class="stat-num">0.93</div>
-        <div class="stat-label">ROC AUC</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">50%</div>
-        <div class="stat-label">Hop Reduction</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">94.6%</div>
-        <div class="stat-label">Uncertainty Calib.</div>
-      </div>
     </div>
   </div>
 
@@ -582,10 +572,11 @@ footer {
         <br>
         <div><span class="t-prompt">▶</span> <span class="t-cmd">cat skills.json</span></div>
         <br>
-        <div><span class="t-key">languages</span>  = <span class="t-val">["Python","Java","C/C++","JS/TS","SQL"]</span></div>
-        <div><span class="t-key">frameworks</span> = <span class="t-val">["Next.js","React","Node.js","FastAPI"]</span></div>
-        <div><span class="t-key">ml_stack</span>   = <span class="t-val">["PyTorch","XGBoost","YOLOv8","OpenCV"]</span></div>
-        <div><span class="t-key">infra</span>      = <span class="t-val">["AWS","Docker","Kubernetes","MS SQL"]</span></div>
+        <div><span class="t-key">languages</span>  = <span class="t-val">["Python","Java","C++","SQL"]</span></div>
+        <div><span class="t-key">ai_ml</span>      = <span class="t-val">["PyTorch","Scikit-learn","XGBoost","YOLOv8"]</span></div>
+        <div><span class="t-key">llm_agentic</span> = <span class="t-val">["LangChain","LangGraph","RAG","Ollama"]</span></div>
+        <div><span class="t-key">frameworks</span> = <span class="t-val">["FastAPI","Streamlit","MS SQL","MongoDB"]</span></div>
+        <div><span class="t-key">cloud_devops</span> = <span class="t-val">["Firebase","AWS","Git","Docker"]</span></div>
         <br>
         <div><span class="t-prompt">▶</span> <span class="t-cmd">./run portfolio.sh</span></div>
         <div style="color:var(--green)">✓ All systems operational</div>
@@ -686,7 +677,7 @@ footer {
         <div class="project-desc">
           An end-to-end ML pipeline over multi-modal sensor data (IMU, ECG, PPG) for activity recognition and heart-rate estimation, built after deep analysis of raw sensor signals for noise, missingness, and quality. A hierarchical temporal model using TCN-Transformers encodes patient history into a probabilistic 10-D health state via a beta-VAE, and a Latent Neural SDE continuously forecasts future health-state trajectories from that latent space.
         </div>
-        <div class="project-highlight">91% uncertainty calibration &nbsp;·&nbsp; 98.3% activity recognition on PAMAP2 &nbsp;·&nbsp; 0.89 Pearson correlation</div>
+        <div class="project-highlight">Uncertainty-calibrated forecasting on real-world sensor data</div>
         <div class="project-tech">
           <span class="tech-pill">Python</span>
           <span class="tech-pill">TCN-Transformers</span>
